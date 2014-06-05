@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Jenna Sue';
+  src: url('JennaSue.eot'); /* IE9 Compat Modes */
+  src: url('JennaSue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('JennaSue.woff') format('woff'), /* Modern Browsers */
+       url('JennaSue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('JennaSue.svg#7f93a81e03084d6c75228cf11aa163c5') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

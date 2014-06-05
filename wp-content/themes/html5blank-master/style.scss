@@ -13,6 +13,31 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+$logo: 'JennaSue';
+
+
+@mixin importfont($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$font-filename}.eot');
+		src: url('#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-filename}.woff') format('woff'),
+		url('#{$font-filename}.ttf') format('truetype'),
+		url('#{$font-filename}.svg##{$font-family}') format('svg');
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-stretch: $font-stretch;
+	}
+}
+
+.main {
+	position:relative;
+	z-index: 5;
+	padding:0;
+	
+}
+ 
+
 /* HOME
 -----------------*/
 
@@ -22,12 +47,13 @@ body{
 	position:fixed;
 	width:100%;
 	top:0;
-	z-index:2;
+	z-index:200;
 }
 
 
 .headwrap {
 	background: url(img/laptop-book.jpg) no-repeat fixed center; 
+	opacity:0.95;
 	background-size:cover;
 	width:100%;
 	position:relative;
@@ -36,7 +62,7 @@ body{
 		margin:0 auto;
 		max-width:90%;
 		width:1240px;
-		height:690px;
+		height:685px;
     
 	    .head {
 		   text-align: center;
@@ -48,10 +74,11 @@ body{
 		   padding:20px 35px;
 		   color:white;
 		   position:fixed;
-		   z-index:1;
-		   top:36%;
-		   left:27%;
+		   z-index:-100;
+		   top:37%;
+		   left:28%;
 		   border: 1px solid grey;
+
 
 		h1 {
 	       font-size: 4.1rem;
@@ -71,19 +98,22 @@ body{
 -----------------*/
 
 .nav {
-		background:rgba(#373425, 0.5);
+		background:rgba(#373425, 0.6);
 	    border: 1px solid grey;
+
 
 	ul {
 		
 
 	   li {
 	   		display:inline-block;
-	   		padding: 1% 2% 1% 5%;
+	   		padding: 1% 0 1% 3%;
+	   		
 
 	   		a {
+	   			
 	   			text-decoration:none;
-	   			font-size:2.2rem;
+	   			font-size:2rem;
 	   			color:white;
 	   			font-weight:300;
 	   		}
@@ -91,9 +121,203 @@ body{
 	}
 }
 
-#menu-item-39 {
+// #menu-item-44 {
+// 				padding:5px 0 -5px 0;
 
-	a {
-	font-size:0;
+// 				a {
+// 				  font-family:Arial;
+// 				  font-size:4rem;
+// 				  line-height:1rem;
+// 				  letter-spacing:3px;
+// 				  color:#27AE60;
+// 				  font-weight:bold;
+// 				}
+// 			}	
+
+ul.social {
+	position:fixed;
+	top:0;
+	right:8%;
+
+
+	li {
+		padding-left:6%;
+		float:right;
+	}
+	
+	#menu-item-77 {
+		padding-top:4px;
+
+
+		a {
+			text-indent:-9999px;
+			background:url(img/icons5.png) no-repeat -16px -2px;
+			display:inline-block;
+			width:42px;
+			height:41px;
+
+		}	
+	}
+
+	#menu-item-78 {
+		// float:right;
+		padding-top:4px;
+		a {
+			text-indent:-9999px;
+			background:url(img/icons5.png) no-repeat -78px -2px;
+			display:inline-block;
+			width:42px;
+			height:41px;
+		}	
+	}
+
+	#menu-item-79 {
+		// float:right;
+		padding-top:4px;
+
+		a {
+			text-indent:-9999px;
+			background:url(img/icons5.png) no-repeat -141px -2px;
+			display:inline-block;
+			width:42px;
+			height:41px;
+		}	
+	}
+
+	#menu-item-80 {
+		
+		padding-top:4px;
+
+		a {
+			text-indent:-9999px;
+			background:url(img/icons5.png) no-repeat -203px -2px;
+			display:inline-block;
+			width:42px;
+			height:41px;
+		}	
+	}
+}
+
+/* ABOUT
+-----------------*/
+
+article.post-50{
+	max-width:1240px;
+	margin: 0 auto;
+}
+
+#about {
+	
+	background:url(img/ab-background.png);
+	position:relative;
+	z-index:100;
+	height:685px;
+
+
+	
+	
+	h2 {
+		padding-top:8%;
+		 letter-spacing: 5px;
+		text-align:center;
+		font-size:4rem;
+		margin:0;
+		color:#112c1b;
+	}
+}
+
+img.cover {
+     width:50%;
+     height:40%;
+     position:absolute;
+     top:200px;
+     left:500px;
+
+     
+} 
+
+// .box {
+// 	background-color: black; 
+// 	 opacity:0.4;
+// 	 width:50%;
+//      height:40%;
+//      position:absolute;
+//      top:200px;
+//      left:500px;
+// }
+// .box::after {
+
+// }
+
+#post-50 {
+	img {
+		width:22%;
+		height: auto;
+		float:left;
+		margin:8% 8% 5% 15%;
+		box-shadow: 3px 3px 7px 3px #0e4225;
+	}
+
+	.content {
+			padding-top:9%;
+			position:relative;
+			display:block;
+
+    
+
+		p {
+			font-size:1.5rem;
+			margin:1% 15% 0 0;
+			line-height:1.4;
+			color:#112c1c;
+		}
+		
+		span.Headline {
+	 		font-size:1.5rem;
+	 		font-weight:bold;
+	 		color:#112c1b;
+	 		
+
+
+ 			
+		}
+    
+	}
+	.content::after {
+	 background-color: black; 
+	 opacity:0.4;
+	 width:50%;
+     height:40%;
+     position:absolute;
+     top:200px;
+     left:500px;
+    }
+	
+
+ }
+
+.skillscontainer {
+	
+	max-width: 1240px;
+	width:100%;
+	margin: 0 auto;
+	
+}
+
+#skills {
+	
+	background:url(img/skillsbackground5.png) no-repeat;
+	position:relative;
+	z-index:100;
+	height:685px;
+	
+	
+	h2 {
+		padding-top:18%;
+		padding-left:2%;
+		letter-spacing: 5px;
+		font-size:3.5rem;
+		margin:0;
+		color:#112c1b;
 	}
 }

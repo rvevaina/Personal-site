@@ -85,6 +85,7 @@ function html5blank_nav()
 		'walker'          => ''
 		)
 	);
+
 }
 
 // Load HTML5 Blank scripts (header.php)
