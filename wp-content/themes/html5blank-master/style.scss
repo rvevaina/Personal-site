@@ -80,16 +80,16 @@ $logo: 'JennaSue';
 		   border: 1px solid grey;
 
 
-		h1 {
-	       font-size: 4.1rem;
-	       letter-spacing: 5px;
-	       font-weight: 400;
-		}
+			h1 {
+		       font-size: 4.1rem;
+		       letter-spacing: 5px;
+		       font-weight: 400;
+			}
 
-		h2 {
-	       font-size: 2.9rem;
-	       font-weight: 300;
-		}
+			h2 {
+		       font-size: 2.9rem;
+		       font-weight: 300;
+			}
 		}
 	}
 }
@@ -138,6 +138,7 @@ ul.social {
 	position:fixed;
 	top:0;
 	right:8%;
+	min-width:350px;
 
 
 	li {
@@ -207,22 +208,17 @@ article.post-50{
 }
 
 #about {
-	
-	background:url(img/ab-background.png);
-	position:relative;
-	z-index:100;
-	height:685px;
+background:url(img/about-background1.png);
+position:relative;
+z-index:100;
+height:685px;
 
-
-	
-	
 	h2 {
 		padding-top:8%;
 		 letter-spacing: 5px;
 		text-align:center;
 		font-size:4rem;
-		margin:0;
-		color:#112c1b;
+		margin:0;		
 	}
 }
 
@@ -231,9 +227,7 @@ img.cover {
      height:40%;
      position:absolute;
      top:200px;
-     left:500px;
-
-     
+     left:500px; 
 } 
 
 // .box {
@@ -255,6 +249,7 @@ img.cover {
 		height:80%;
 		float:left;
 		margin:10% 8% 5% 15%;
+		border: 1px solid grey;
 	
 	}
 
@@ -262,8 +257,6 @@ img.cover {
 			padding-top:9%;
 			position:relative;
 			display:block;
-
-    
 
 		p {
 			font-size:1.5rem;
@@ -276,24 +269,8 @@ img.cover {
 	 		font-size:1.5rem;
 	 		font-weight:bold;
 	 		color:#112c1b;
-	 		
-
-
- 			
 		}
-    
 	}
-	.content::after {
-	 background-color: black; 
-	 opacity:0.4;
-	 width:50%;
-     height:40%;
-     position:absolute;
-     top:200px;
-     left:500px;
-    }
-	
-
  }
 
 .skillscontainer {
@@ -306,14 +283,15 @@ img.cover {
 
 #skills {
 	
-	background:url(img/skillsbackground5.png) no-repeat;
-	height:685px;
+	background:url(img/skillsbackground6.png) no-repeat;
+	background-size:cover;
+	height:500px;
 
 
 	
 	h2 {
 		position:relative;
-		top:35%;
+		top:42%;
 		padding-left:2%;
 		letter-spacing: 5px;
 		font-size:3.5rem;
@@ -336,8 +314,6 @@ img.cover {
 			padding-left:40px;
 		} 
 
-
-		
 	    ul {
 			text-align: center;
 	    	h3 {
@@ -353,14 +329,12 @@ img.cover {
 }
 
 	
-	.design {
+.design {
 	float:left;
 	width:27%;
 	text-align: center;
 	margin-left:2%;
 
-	
-	/*padding: 50px 0px 50px 70px;*/
 		img {
 			width:85%;
 			height:auto;	
@@ -369,61 +343,49 @@ img.cover {
 
 		ul {
 			text-align: center;
-			
+				
 			h3 {
 			font-size:2rem;
-		    }
-			
+			   }
+				
 			li {
 			list-style: none;
 			line-height: 25px;
 			font-size: 15px;
-			font-style: light;
-			
-			
+			font-style: light;	
 			}
 		}
-
-	
-	}
+}
 
 
 	.writing {
-	float:left;
-	width:27%;
-	padding: 38px 0px 32px 0px;
-	text-align: center;
-	margin-right:0;
-	}
- 
-	.writing img {
-		width:75%;
-		height:auto;
-		padding-bottom: 22px
-		
-	} 
-
-	.writing h3 {
-		color: white;
-		font-family: 'Raleway', 'sans-serif';
+		float:left;
+		width:27%;
 		text-align: center;
+		margin-right:0;
 
+	 
+			img {
+				width:85%;
+				height:auto;
+				padding: 2px 0 30px 35px;
+			}	
 
+			ul {
+			text-align: center;
+		    	h3 {
+					font-size:2rem;
+					}
+				li { 
+					list-style: none;
+					font-size: 15px;
+					line-height: 25px;
+					}
+			}
 	}
-
-
-	.writing ul li {
-		list-style: none;
-		text-align: center;
-		color: white;
-		font-family: 'Source Sans Pro', sans-serif;
-			line-height: 18px;
-		font-size: 15px;
-		line-height: 25px;
-		 padding-right: 11%;
 		
 		
 	
 
 	
-	}
+	

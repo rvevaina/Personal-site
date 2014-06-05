@@ -258,6 +258,7 @@ ul.social {
   position: fixed;
   top: 0;
   right: 8%;
+  min-width: 350px;
 }
 ul.social li {
   padding-left: 6%;
@@ -312,7 +313,7 @@ article.post-50 {
 }
 
 #about {
-  background: url(img/ab-background.png);
+  background: url(img/about-background1.png);
   position: relative;
   z-index: 100;
   height: 685px;
@@ -323,7 +324,6 @@ article.post-50 {
   text-align: center;
   font-size: 4rem;
   margin: 0;
-  color: #112c1b;
 }
 
 img.cover {
@@ -339,6 +339,7 @@ img.cover {
   height: 80%;
   float: left;
   margin: 10% 8% 5% 15%;
+  border: 1px solid grey;
 }
 #post-50 .content {
   padding-top: 9%;
@@ -356,15 +357,6 @@ img.cover {
   font-weight: bold;
   color: #112c1b;
 }
-#post-50 .content::after {
-  background-color: black;
-  opacity: 0.4;
-  width: 50%;
-  height: 40%;
-  position: absolute;
-  top: 200px;
-  left: 500px;
-}
 
 .skillscontainer {
   max-width: 1240px;
@@ -373,12 +365,13 @@ img.cover {
 }
 
 #skills {
-  background: url(img/skillsbackground5.png) no-repeat;
-  height: 685px;
+  background: url(img/skillsbackground6.png) no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 #skills h2 {
   position: relative;
-  top: 35%;
+  top: 42%;
   padding-left: 2%;
   letter-spacing: 5px;
   font-size: 3.5rem;
@@ -415,7 +408,6 @@ img.cover {
   width: 27%;
   text-align: center;
   margin-left: 2%;
-  /*padding: 50px 0px 50px 70px;*/
 }
 .design img {
   width: 85%;
@@ -438,30 +430,22 @@ img.cover {
 .writing {
   float: left;
   width: 27%;
-  padding: 38px 0px 32px 0px;
   text-align: center;
   margin-right: 0;
 }
-
 .writing img {
-  width: 75%;
+  width: 85%;
   height: auto;
-  padding-bottom: 22px;
+  padding: 2px 0 30px 35px;
 }
-
-.writing h3 {
-  color: white;
-  font-family: 'Raleway', 'sans-serif';
+.writing ul {
   text-align: center;
 }
-
+.writing ul h3 {
+  font-size: 2rem;
+}
 .writing ul li {
   list-style: none;
-  text-align: center;
-  color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 18px;
   font-size: 15px;
   line-height: 25px;
-  padding-right: 11%;
 }
