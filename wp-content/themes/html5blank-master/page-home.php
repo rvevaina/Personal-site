@@ -59,9 +59,45 @@ get_header() ?>
 		</div>
 		<!-- /article -->
 
-		<div id="skills" class="clearfix"> 
-   	  <div class="skillscontainer">	
-   	  	<h2>SKILLS</h2>	
+	<div id="skills" class="clearfix"> 
+   		<h2><span>SKILLS</span></h2>
+   	  	<div class="skillscontainer">	
+	   	  	<div class="front-end">
+	   	  		<img src="<?php echo get_template_directory_uri(); ?>/img/front end.png" alt="">
+				
+				<ul>
+					<h3>Front-end development</h3>
+					<li>HTML5 & CSS3</li>
+					<li>Javascript</li>
+					<li>J-Query</li>
+				</ul>
+				
+			</div>
+
+			<div class="design">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/responsive1.png" alt="">
+	           
+				
+				<ul>
+				<h3>Responsive Design</h3>
+				<li>Cross browser compatibility</li>
+				<li>WordPress CMS Design</li>
+				<li>User Experience</li>
+				</ul>
+			</div>
+
+			<div class="writing">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/writing.png" alt="">
+						
+				<h3>Copywriting</h3>
+				
+				<ul>
+				<li>Website copy</li>
+				<li>Proofreading and editing</li>
+				<li>Managing content</li>
+				</ul>
+			</div>
+
    	  </div>
    </div>
 

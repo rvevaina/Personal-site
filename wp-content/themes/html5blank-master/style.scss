@@ -251,11 +251,11 @@ img.cover {
 
 #post-50 {
 	img {
-		width:22%;
-		height: auto;
+		width:20%;
+		height:80%;
 		float:left;
-		margin:8% 8% 5% 15%;
-		box-shadow: 3px 3px 7px 3px #0e4225;
+		margin:10% 8% 5% 15%;
+	
 	}
 
 	.content {
@@ -299,7 +299,7 @@ img.cover {
 .skillscontainer {
 	
 	max-width: 1240px;
-	width:100%;
+	width:84%;
 	margin: 0 auto;
 	
 }
@@ -307,17 +307,123 @@ img.cover {
 #skills {
 	
 	background:url(img/skillsbackground5.png) no-repeat;
-	position:relative;
-	z-index:100;
 	height:685px;
-	
+
+
 	
 	h2 {
-		padding-top:18%;
+		position:relative;
+		top:35%;
 		padding-left:2%;
 		letter-spacing: 5px;
 		font-size:3.5rem;
 		margin:0;
 		color:#112c1b;
-	}
+		}
 }
+
+
+.front-end {
+	float:left;
+	width:27%;
+	text-align: center; 
+	margin-left:15%;
+	
+		img {
+			width:90%;
+			height:auto;
+			padding-bottom: 28px;
+			padding-left:40px;
+		} 
+
+
+		
+	    ul {
+			text-align: center;
+	    	h3 {
+			font-size:2rem;
+			}
+		    li {
+				list-style: none;
+				// font-family: 'Source Sans Pro', sans-serif;	
+				line-height: 25px;
+				font-size: 15px;
+			}
+	    }
+}
+
+	
+	.design {
+	float:left;
+	width:27%;
+	text-align: center;
+	margin-left:2%;
+
+	
+	/*padding: 50px 0px 50px 70px;*/
+		img {
+			width:85%;
+			height:auto;	
+			padding: 10px 0 30px 35px;
+		} 
+
+		ul {
+			text-align: center;
+			
+			h3 {
+			font-size:2rem;
+		    }
+			
+			li {
+			list-style: none;
+			line-height: 25px;
+			font-size: 15px;
+			font-style: light;
+			
+			
+			}
+		}
+
+	
+	}
+
+
+	.writing {
+	float:left;
+	width:27%;
+	padding: 38px 0px 32px 0px;
+	text-align: center;
+	margin-right:0;
+	}
+ 
+	.writing img {
+		width:75%;
+		height:auto;
+		padding-bottom: 22px
+		
+	} 
+
+	.writing h3 {
+		color: white;
+		font-family: 'Raleway', 'sans-serif';
+		text-align: center;
+
+
+	}
+
+
+	.writing ul li {
+		list-style: none;
+		text-align: center;
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+			line-height: 18px;
+		font-size: 15px;
+		line-height: 25px;
+		 padding-right: 11%;
+		
+		
+	
+
+	
+	}
