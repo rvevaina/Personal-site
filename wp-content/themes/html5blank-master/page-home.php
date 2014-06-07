@@ -125,28 +125,28 @@ get_header() ?>
  		"orderby" => "menu_order", 
  		 )
  	); ?>
+	
 
-   
+		<div id="portfolio">	
+		  <div class="portfoliocontainer clearfix">
+   		<h2>PORTFOLIO</h2>
 	<?php if ($portfolio->have_posts()): while ($portfolio->have_posts()) : $portfolio->the_post(); ?>
 
-		<!-- article -->
-				<h2><?php the_title(); ?></h2>
-
-
-			<?php the_content(); ?>
-
-			<br class="clear">
-			
-			<!-- styling the thumbnail image - ask instructor-->
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
-			<?php the_post_thumbnail('medium'); ?></a>
-
-
-		</div>
-		<!-- /article -->
+		<div class="thumbnails">
+		
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<br class="clear">
+				<!-- styling the thumbnail image - ask instructor-->
+				<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?></a>
+	     	</div>
+	     </div>
 
 
 	<?php endwhile; ?>
+
+	      </div>
+	    </div>
 
 	<?php else: ?>
 
@@ -164,6 +164,7 @@ get_header() ?>
 	<!-- /section -->
 
 	
+		
 
 </main>
    

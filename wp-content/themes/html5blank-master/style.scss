@@ -34,6 +34,7 @@ $logo: 'JennaSue';
 	position:relative;
 	z-index: 5;
 	padding:0;
+	width:100%
 	
 }
  
@@ -137,7 +138,7 @@ $logo: 'JennaSue';
 ul.social {
 	position:fixed;
 	top:0;
-	right:8%;
+	right:7%;
 	min-width:350px;
 
 
@@ -152,7 +153,7 @@ ul.social {
 
 		a {
 			text-indent:-9999px;
-			background:url(img/icons5.png) no-repeat -16px -2px;
+			background:url(img/icons5.png) no-repeat -16px -3px;
 			display:inline-block;
 			width:42px;
 			height:41px;
@@ -165,7 +166,7 @@ ul.social {
 		padding-top:4px;
 		a {
 			text-indent:-9999px;
-			background:url(img/icons5.png) no-repeat -78px -2px;
+			background:url(img/icons5.png) no-repeat -78px -3px;
 			display:inline-block;
 			width:42px;
 			height:41px;
@@ -178,7 +179,7 @@ ul.social {
 
 		a {
 			text-indent:-9999px;
-			background:url(img/icons5.png) no-repeat -141px -2px;
+			background:url(img/icons5.png) no-repeat -141px -3px;
 			display:inline-block;
 			width:42px;
 			height:41px;
@@ -191,7 +192,7 @@ ul.social {
 
 		a {
 			text-indent:-9999px;
-			background:url(img/icons5.png) no-repeat -203px -2px;
+			background:url(img/icons5.png) no-repeat -203px -3px;
 			display:inline-block;
 			width:42px;
 			height:41px;
@@ -291,10 +292,10 @@ img.cover {
 	
 	h2 {
 		position:relative;
-		top:42%;
-		padding-left:2%;
+		top:45%;
+		padding-left:3%;
 		letter-spacing: 5px;
-		font-size:3.5rem;
+		font-size:3.2rem;
 		margin:0;
 		color:#112c1b;
 		}
@@ -306,6 +307,7 @@ img.cover {
 	width:27%;
 	text-align: center; 
 	margin-left:15%;
+	margin-top:5%;
 	
 		img {
 			width:90%;
@@ -334,6 +336,7 @@ img.cover {
 	width:27%;
 	text-align: center;
 	margin-left:2%;
+	margin-top:5%;
 
 		img {
 			width:85%;
@@ -363,6 +366,7 @@ img.cover {
 		width:27%;
 		text-align: center;
 		margin-right:0;
+		margin-top:5%;
 
 	 
 			img {
@@ -384,7 +388,50 @@ img.cover {
 			}
 	}
 		
+#portfolio {
+background:url(img/about-background1.png);
+position:relative;
+z-index:100;
+height:685px;
+
+	h2 {
+		padding-top:8%;
+		 letter-spacing: 5px;
+		text-align:center;
+		font-size:4rem;
+		margin:0;		
+	}
+}
+
+.portfoliocontainer {
+	
+	margin: 0 auto;
+	max-width:1220px;
+
+	.thumbnails {
 		
+		width:31%;
+		float:left;
+		margin-top:13%;
+		
+		
+			.thumbnailSize {
+				width:100%;
+				height:auto;
+			}
+	}	
+		.thumbnails:nth-child(3n+3){
+			margin-right:3.5%;
+			margin-left:3.5%;
+		}
+}
+
+	// .thumbnails:nth-child(n+3) {
+	// margin-left:15%;
+	// }
+
+
+	
 	
 
 	
