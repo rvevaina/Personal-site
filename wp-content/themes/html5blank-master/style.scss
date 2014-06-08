@@ -57,19 +57,20 @@ $logo: 'JennaSue';
 	opacity:0.95;
 	background-size:cover;
 	width:100%;
+	height:950px;
 	position:relative;
 
 	.headwrapContainer {
 		margin:0 auto;
 		max-width:90%;
 		width:1240px;
-		height:685px;
+		
     
 	    .head {
 		   text-align: center;
 		   line-height:0.9;
 		   height:185px;
-		   width:520px;
+		   width:42%;
 		   background:#27AE60;
 		   opacity:0.8;
 		   padding:20px 35px;
@@ -77,7 +78,7 @@ $logo: 'JennaSue';
 		   position:fixed;
 		   z-index:-100;
 		   top:37%;
-		   left:28%;
+		   left:27%;
 		   border: 1px solid grey;
 
 
@@ -209,10 +210,10 @@ article.post-50{
 }
 
 #about {
-background:url(img/about-background1.png);
+background:url(img/about-background6.png);
 position:relative;
 z-index:100;
-height:685px;
+height:676px;
 
 	h2 {
 		padding-top:8%;
@@ -286,14 +287,14 @@ img.cover {
 	
 	background:url(img/skillsbackground6.png) no-repeat;
 	background-size:cover;
-	height:500px;
+	height:635px;
 
 
 	
 	h2 {
 		position:relative;
 		top:45%;
-		padding-left:3%;
+		padding-left:4%;
 		letter-spacing: 5px;
 		font-size:3.2rem;
 		margin:0;
@@ -306,8 +307,8 @@ img.cover {
 	float:left;
 	width:27%;
 	text-align: center; 
-	margin-left:15%;
-	margin-top:5%;
+	margin-left:17%;
+	margin-top:8%;
 	
 		img {
 			width:90%;
@@ -336,7 +337,7 @@ img.cover {
 	width:27%;
 	text-align: center;
 	margin-left:2%;
-	margin-top:5%;
+	margin-top:8%;
 
 		img {
 			width:85%;
@@ -366,7 +367,7 @@ img.cover {
 		width:27%;
 		text-align: center;
 		margin-right:0;
-		margin-top:5%;
+		margin-top:8%;
 
 	 
 			img {
@@ -389,14 +390,14 @@ img.cover {
 	}
 		
 #portfolio {
-background:url(img/about-background1.png);
+background:url(img/about-background5.png);
 position:relative;
 z-index:100;
-height:685px;
+height:675px;
 
 	h2 {
-		padding-top:8%;
-		 letter-spacing: 5px;
+		padding-top:10%;
+		letter-spacing: 5px;
 		text-align:center;
 		font-size:4rem;
 		margin:0;		
@@ -406,13 +407,14 @@ height:685px;
 .portfoliocontainer {
 	
 	margin: 0 auto;
-	max-width:1220px;
+	max-width:1000px;
 
 	.thumbnails {
 		
-		width:31%;
+		width:30%;
 		float:left;
-		margin-top:13%;
+		margin-top:17%;
+		border:2px solid #0c371f;
 		
 		
 			.thumbnailSize {
@@ -421,8 +423,8 @@ height:685px;
 			}
 	}	
 		.thumbnails:nth-child(3n+3){
-			margin-right:3.5%;
-			margin-left:3.5%;
+			margin-right:5%;
+			margin-left:5%;
 		}
 }
 
@@ -430,6 +432,61 @@ height:685px;
 	// margin-left:15%;
 	// }
 
+#contact {
+background:url(img/cellphone4.png)no-repeat;
+background-size:cover;
+position:relative;
+z-index:100;
+height:750px;
+	
+	.contactcontainer {
+		margin:0 auto;
+		max-width:90%;
+		width:1240px;
+	
+		.tittleWrap {
+			   
+			   height:90px;
+			   width:24%;
+			   // opacity:0.8;
+			   padding: 20px;
+			   color:white;
+			   z-index:-100;
+			   border: 1px solid grey;
+			   margin: 0 auto;
+			   position:absolute;
+			   top:13%;
+			   left:36%;
+
+
+			h2 {
+				
+				letter-spacing: 5px;
+				text-align:center;
+				font-size:3.8rem;
+				margin:0 auto;	
+				color:white;
+
+			}
+		}
+	}
+}
+
+ #post-93 {
+ 	padding-top:18%;
+ 	padding-right:5%;
+ 	h3 {
+ 		color: white;
+ 		text-align:center;
+ 		font-size:2.4rem;
+ 	}
+ 	p {
+		color: white;
+ 		text-align:center;
+ 		font-size:1.6rem;
+ 		font-weight:300;
+ 	}
+ }
 
 	
 	

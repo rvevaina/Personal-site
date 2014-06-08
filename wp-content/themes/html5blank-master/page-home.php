@@ -31,8 +31,8 @@ get_header() ?>
  		"post_type" => 'page',
  		"order" => 'ASC',
  		"orderby" => "menu_order", 
- 		"post__not_in" =>array(17,2,7),
- 		 )
+ 		"post__not_in" =>array(17,2,7,93),
+ 		 ) 
  	); ?>
 
    
@@ -163,7 +163,53 @@ get_header() ?>
 	</section>
 	<!-- /section -->
 
+	<?php $contact = new WP_Query(
+ 	array (
+ 		"post_type" => 'page',
+ 		"order" => 'ascending',
+ 		"orderby" => "menu_order", 
+ 		"post__not_in" =>array(17,2,7,50),
+ 		 )
+ 	); ?>
 	
+
+		<div id="contact">	
+		  <div class="contactcontainer clearfix">
+   			<div class="tittleWrap">
+   				<h2>CONTACT</h2>
+   			</div>
+	<?php if ($contact->have_posts()): while ($contact->have_posts()) : $contact->the_post(); ?>
+
+	
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>  
+
+
+			<?php the_content(); ?>
+
+			<br class="clear">
+
+			<?php edit_post_link(); ?>
+
+		</article>
+
+	<?php endwhile; ?>
+
+	      </div>
+	    </div>
+
+	<?php else: ?>
+
+		<!-- article -->
+		<article>
+
+			<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+
+		</article>
+		<!-- /article -->
+
+	<?php endif; ?>
+
+	</section>
 		
 
 </main>
