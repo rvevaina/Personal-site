@@ -9,12 +9,14 @@
 		var app = {};
 
 		app.fullHeight = function(){
-		var winHeight = $(window).height();
-		$(".full-height").css("height",winHeight);
-		console.log(winHeight);
-	};
+			var winHeight = $(window).height();
+			$(".full-height").css("height",winHeight);
+			console.log(winHeight);
+		};
 
-	$(window).on("resize", app.fullHeight);
+		
+
+		$(window).on("resize", app.fullHeight);
 
 	});
 	

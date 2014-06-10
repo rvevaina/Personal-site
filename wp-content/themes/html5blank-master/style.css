@@ -225,7 +225,7 @@ body {
   position: fixed;
   z-index: -100;
   top: 37%;
-  left: 27%;
+  left: 28%;
   border: 1px solid grey;
 }
 .headwrap .headwrapContainer .head h1 {
@@ -348,15 +348,16 @@ img.cover {
   display: block;
 }
 #post-50 .content p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 1% 15% 0 0;
   line-height: 1.4;
   color: #112c1c;
+  font-weight: 300;
 }
-#post-50 .content span.Headline {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #112c1b;
+#post-50 .content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #112c1c;
 }
 
 .skillscontainer {
@@ -460,23 +461,72 @@ img.cover {
   z-index: 100;
   height: 675px;
 }
-#portfolio h2 {
+
+.portfoliocontainer {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.portfoliocontainer h2 {
   padding-top: 10%;
   letter-spacing: 5px;
   text-align: center;
   font-size: 4rem;
   margin: 0;
 }
-
-.portfoliocontainer {
-  margin: 0 auto;
-  max-width: 1000px;
-}
 .portfoliocontainer .thumbnails {
   width: 30%;
   float: left;
   margin-top: 17%;
-  border: 2px solid #0c371f;
+  border: 1px solid #0c371f;
+  border-radius: 5px;
+}
+.portfoliocontainer .thumbnails .projects {
+  position: relative;
+  overflow: hidden;
+}
+.portfoliocontainer .thumbnails .projects img {
+  -webkit-transform: scale(1, 1);
+  transition: all 1.5s ease-in-out;
+}
+.portfoliocontainer .thumbnails .projects .mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.portfoliocontainer .thumbnails .projects .mask h2.mask-title {
+  padding-top: 8%;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  -weblit-transform: scale(0, 0);
+  color: white;
+  transition: all 1s linear;
+  opacity: 0;
+}
+.portfoliocontainer .thumbnails .projects .mask p {
+  webkit-transform: scale(0, 0);
+  color: white;
+  transition: all 1s linear;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+}
+.portfoliocontainer .thumbnails .projects:hover img {
+  -webkit-transform: scale(6, 6);
+  opacity: 0;
+}
+.portfoliocontainer .thumbnails .projects:hover .mask {
+  opacity: 1;
+}
+.portfoliocontainer .thumbnails .projects:hover h2.mask-title, .portfoliocontainer .thumbnails .projects:hover p {
+  -webkit-transform: scale(1.5, 1.5);
+  opacity: 1;
 }
 .portfoliocontainer .thumbnails .thumbnailSize {
   width: 100%;

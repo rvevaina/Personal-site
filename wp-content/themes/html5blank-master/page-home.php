@@ -84,7 +84,7 @@ get_header() ?>
 					<h3>Front-end development</h3>
 					<li>HTML5 & CSS3</li>
 					<li>Javascript</li>
-					<li>J-Query</li>
+					<li>jQuery</li>
 				</ul>
 				
 			</div>
@@ -133,13 +133,22 @@ get_header() ?>
 	<?php if ($portfolio->have_posts()): while ($portfolio->have_posts()) : $portfolio->the_post(); ?>
 
 		<div class="thumbnails">
+			
+
 		
+			<div id="post-<?php the_ID(); ?>" <?php post_class('projects'); ?>>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 				<br class="clear">
 				<!-- styling the thumbnail image - ask instructor-->
 				<a href="<?php the_permalink(); ?>">
 				<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?></a>
+				<div class="mask">
+				<h2 class="mask-title">TITLE</h2>
+				<p>text</p>
+				</div>
 	     	</div>
+	     </div>
 	     </div>
 
 
@@ -210,9 +219,11 @@ get_header() ?>
 	<?php endif; ?>
 
 	</section>
-		
+
+
 
 </main>
+
    
  
 <?php get_footer(); ?>

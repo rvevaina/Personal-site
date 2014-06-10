@@ -22,6 +22,7 @@
         });
         </script>
 
+
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
 	</head>
@@ -64,6 +65,6 @@
 					</nav>
 				
 					<!-- /nav -->
-
+	
 			</header>
 			<!-- /header -->
